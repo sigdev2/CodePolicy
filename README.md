@@ -76,175 +76,44 @@
 
 # Ключевые слова и зарезервированные слова
 
-and
-abstract', ['keyword', 'modifer']),
-arguments', ['keyword', 'pseudo']),
-await', ['keyword', 'modifer']),
-async', ['keyword', 'modifer']),
-array', ['keyword', 'type']),
-assert', ['keyword', 'function']),
-and_eq', ['keyword', 'operator']),
-as', ['keyword', 'operator']),
-asm', ['keyword', 'block']),
-auto', ['keyword', 'type']),
-bitand', ['keyword', 'operator']),
-	new Token('bitor', ['keyword', 'operator']),
-	new Token('bool', ['keyword', 'type']),
-	new Token('boolean', ['keyword', 'type']),
-	new Token('break', ['keyword', 'function']),
-	new Token('byte', ['keyword', 'type']),
-	new Token('case', ['keyword', 'block']),
-	new Token('catch', ['keyword', 'block']),
-	new Token('char', ['keyword', 'type']),
-	new Token('checked', ['keyword', 'block']),
-	new Token('class', ['keyword', 'block']),
-	new Token('clone', ['keyword', 'function']),
-	new Token('compl', ['keyword', 'operator']),
-	new Token('const', ['keyword', 'modifer']),
-	new Token('const_cast', ['keyword', 'function']),
-	new Token('continue', ['keyword', 'function']),
-	new Token('callable', ['keyword', 'type']),
-	new Token('debugger', ['keyword', 'function']),
-	new Token('default', ['keyword', 'block']),
-	new Token('declare', ['keyword', 'block']),
-	new Token('decimal', ['keyword', 'type']),
-	new Token('die', ['keyword', 'function']),
-	new Token('def', ['keyword', 'modifer']),
-	new Token('delete', ['keyword', 'function']),
-	new Token('del', ['keyword', 'function']),
-	new Token('do', ['keyword', 'block']),
-	new Token('double', ['keyword', 'type']),
-	new Token('dynamic_cast', ['keyword', 'function']),
-	new Token('else', ['keyword', 'block']),
-	new Token('elseif', ['keyword', 'block']),
-	new Token('elif', ['keyword', 'block']),
-	new Token('enum', ['keyword', 'block']),
-	new Token('except', ['keyword', 'block']),
-	new Token('echo', ['keyword', 'function']),
-	new Token('empty', ['keyword', 'function']),
-	new Token('enddeclare', ['keyword', 'function']),
-	new Token('endfor', ['keyword', 'function']),
-	new Token('endforeach', ['keyword', 'function']),
-	new Token('endif', ['keyword', 'function']),
-	new Token('endswitch', ['keyword', 'function']),
-	new Token('endwhile', ['keyword', 'function']),
-	new Token('eval', ['keyword', 'function']),
-	new Token('exit', ['keyword', 'function']),
-	new Token('explicit', ['keyword', 'modifer']),
-	new Token('export', ['keyword', 'block']),
-	new Token('extern', ['keyword', 'block']),
-	new Token('extends', ['keyword', 'operator']),
-	new Token('exec', ['keyword', 'function']),
-	new Token('event', ['keyword', 'modifer']),
-	new Token('false', ['keyword', 'value']),
-	new Token('final', ['keyword', 'modifer']),
-	new Token('finally', ['keyword', 'modifer']),
-	new Token('float', ['keyword', 'type']),
-	new Token('for', ['keyword', 'block']),
-	new Token('from', ['keyword', 'operator']),
-	new Token('foreach', ['keyword', 'block']),
-	new Token('function', ['keyword', 'modifer']),
-	new Token('friend', ['keyword', 'modifer']),
-	new Token('fixed', ['keyword', 'modifer']),
-	new Token('goto', ['keyword', 'function']),
-	new Token('global', ['keyword', 'modifer']),
-	new Token('get', ['keyword', 'block']),
-	new Token('if', ['keyword', 'block']),
-	new Token('ifn', ['keyword', 'block']),
-	new Token('implements', ['keyword', 'operator']),
-	new Token('implicit', ['keyword', 'modifer']),
-	new Token('import', ['keyword', 'function']),
-	new Token('include', ['keyword', 'function']),
-	new Token('include_once', ['keyword', 'function']),
-	new Token('in', ['keyword', 'operator']),
-	new Token('instanceof', ['keyword', 'operator']),
-	new Token('insteadof', ['keyword', 'operator']),
-	new Token('inline', ['keyword', 'modifer']),
-	new Token('internal', ['keyword', 'modifer']),
-	new Token('int', ['keyword', 'type']),
-	new Token('interface', ['keyword', 'block']),
-	new Token('isset', ['keyword', 'function']),
-	new Token('is', ['keyword', 'operator']),
-	new Token('lambda', ['keyword', 'function']),
-	new Token('let', ['keyword', 'type']),
-	new Token('long', ['keyword', 'modifer']),
-	new Token('list', ['keyword', 'type']),
-	new Token('lock', ['keyword', 'block']),
-	new Token('mutable', ['keyword', 'modifer']),
-	new Token('namespace', ['keyword', 'block']),
-	new Token('native', ['keyword', 'modifer']),
-	new Token('null', ['keyword', 'value']),
-	new Token('new', ['keyword', 'function']),
-	new Token('not', ['keyword', 'operator']),
-	new Token('not_eq', ['keyword', 'operator']),
-	new Token('operator', ['keyword', 'modifer']),
-	new Token('or', ['keyword', 'operator']),
-	new Token('or_eq', ['keyword', 'operator']),
-	new Token('object', ['keyword', 'type']),
-	new Token('out', ['keyword', 'modifer']),
-	new Token('override', ['keyword', 'modifer']),
-	new Token('package', ['keyword', 'function']),
-	new Token('params', ['keyword', 'modifer']),
-	new Token('private', ['keyword', 'modifer']),
-	new Token('protected', ['keyword', 'modifer']),
-	new Token('public', ['keyword', 'modifer']),
-	new Token('print', ['keyword', 'function']),
-	new Token('pass', ['keyword', 'function']),
-	new Token('readonly', ['keyword', 'modifer']),
-	new Token('register', ['keyword', 'function']),
-	new Token('ref', ['keyword', 'modifer']),
-	new Token('reinterpret_cast', ['keyword', 'function']),
-	new Token('return', ['keyword', 'function']),
-	new Token('require', ['keyword', 'function']),
-	new Token('require_once', ['keyword', 'function']),
-	new Token('raise', ['keyword', 'function']),
-	new Token('sbyte', ['keyword', 'type']),
-	new Token('short', ['keyword', 'modifer']),
-	new Token('sealed', ['keyword', 'modifer']),
-	new Token('signed', ['keyword', 'modifer']),
-	new Token('sizeof', ['keyword', 'function']),
-	new Token('super', ['keyword', 'function']),
-	new Token('static', ['keyword', 'modifer']),
-	new Token('stackalloc', ['keyword', 'function']),
-	new Token('static_cast', ['keyword', 'function']),
-	new Token('string', ['keyword', 'type']),
-	new Token('str', ['keyword', 'type']),
-	new Token('struct', ['keyword', 'block']),
-	new Token('switch', ['keyword', 'block']),
-	new Token('synchronized', ['keyword', 'modifer']),
-	new Token('sync', ['keyword', 'modifer']),
-	new Token('self', ['keyword', 'pseudo']),
-	new Token('set', ['keyword', 'block']),
-	new Token('template', ['keyword', 'modifer']),
-	new Token('this', ['keyword', 'pseudo']),
-	new Token('throw', ['keyword', 'function']),
-	new Token('throws', ['keyword', 'modifer']),
-	new Token('transient', ['keyword', 'modifer']),
-	new Token('true', ['keyword', 'value']),
-	new Token('try', ['keyword', 'block']),
-	new Token('trait', ['keyword', 'block']),
-	new Token('typedef', ['keyword', 'function']),
-	new Token('typeid', ['keyword', 'function']),
-	new Token('typename', ['keyword', 'function']),
-	new Token('typeof', ['keyword', 'function']),
-	new Token('union', ['keyword', 'block']),
-	new Token('uint', ['keyword', 'type']),
-	new Token('unsigned', ['keyword', 'modifer']),
-	new Token('using', ['keyword', 'function']),
-	new Token('ulong', ['keyword', 'type']),
-	new Token('ushort', ['keyword', 'type']),
-	new Token('unset', ['keyword', 'function']),
-	new Token('use', ['keyword', 'operator']),
-	new Token('unchecked', ['keyword', 'block']),
-	new Token('unsafe', ['keyword', 'modifer']),
-	new Token('virtual', ['keyword', 'modifer']),
-	new Token('void', ['keyword', 'type']),
-	new Token('var', ['keyword', 'type']),
-	new Token('volatile', ['keyword', 'modifer']),
-	new Token('wchar_t', ['keyword', 'type']),
-	new Token('while', ['keyword', 'block']),
-	new Token('with', ['keyword', 'block']),
-	new Token('where', ['keyword', 'operator']),
-	new Token('xor', ['keyword', 'operator']),
-	new Token('xor_eq', ['keyword', 'operator']),
-    new Token('yield', ['keyword', 'function'])];
+Большенство языков программирования не позволяют использовать словесные операторы в качестве имён. В то же время встроенные функции, типы или модификаторы вполне могут быть использованы в рамках своей области видимости, переписывая имеющиеся. Дабы не допустить путаницы лучше по максимому не допускать использование данных слов.
+
+Простые типы | Операторы | Функции | Блоки | Модификаторы | Объекты и значения
+--- | --- | --- | --- | --- | ---
+array|and|assert|asm|abstract|arguments
+auto|and_eq|callable|case|async|checked
+bool|as|clone|catch|await|false
+boolean|bitand|const_cast|class|const|self
+byte|bitor|del|default|def|this
+char|break|delete|do|explicit|true
+decimal|compl|die|elif|extends|unchecked
+double|continue|dynamic_cast|else|extern|undefined
+event|debugger|echo|elseif|final|
+float|declare|empty|enum|finally|
+int|enddeclare|eval|except|fixed|
+let|endfor|exec|for|friend|
+list|endforeach|exit|foreach|global|
+long|endif|export|function|implements|
+none|endswitch|get|if|implicit|
+null|endwhile|goto|ifn|inline|
+object|from|import|interface|internal|
+ref|in|include|loop|lambda|
+sbyte|is|include_once|namespace|mutable|
+short|new|instanceof|private|native|
+signed|not|isset|protected|override|
+str|not_eq|lock|public|readonly|
+string|or|operator|struct|sealed|
+uint|or_eq|package|switch|static|
+ulong|pass|print|trait|sync|
+unsigned|raise|register|try|synchronized|
+ushort|return|reinterpret_cast|union|template|
+var|throw|require|until|transient|
+void|typedef|require_once|while|unsafe|
+wchar_t|typeid|set|with|virtual|
+|typename|sizeof||volatile|
+|use|stackalloc|||
+|using|static_cast|||
+|where|super|||
+|xor|typeof|||
+|xor_eq|unset|||
+|yield||||
